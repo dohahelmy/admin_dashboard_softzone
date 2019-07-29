@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Font Awesome kit -->
+        <script src="https://kit.fontawesome.com/61ff7d8555.js"></script>
+        <!-- bootStrap library -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- styleSheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <!-- Start of wrapper -->
+        <div id="wrapper" class="d-flex">
+            <!-- Vertical Navbar -->
+            <nav id="vertical_nav" class="list-group">
+                <img id="logo" src="img/logo.png">
+                <a class="list-group-item nav-link" href="clients.html"><i class="fas fa-users"></i>Clients</a>
+                <a class="list-group-item nav-link" href="projects.html"><i class="fas fa-project-diagram"></i>Projects</a>
+                <a class="list-group-item nav-link" href="contact.html"><i class="fas fa-info-circle"></i>Contact Us</a>
+            </nav>
+
+            <!-- page content -->
+            <div id="page-content-wrapper">
+                <!-- Horizontal nav -->
+                <nav id="horizontal_nav" class="navbar container-fluid">
+                    <div class="container nav d-flex align-items-center">
+                        <div class="">
+                            <button id="sidebar-toggler" type="button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="justify-content-end d-flex align-items-center">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                            <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+                            <a class="nav-link" href="#"><i class="far fa-envelope"></i></a>
+                            <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Dashboard layout -->
+                <main class="container-fluid">
+                    <article class="container">
+                        <!-- Contact info -->
+                        <section id="contact_info">
+                            <div class="row">
+                                <div class="w-100">
+                                    <button id="contact_edit_btn" class="btn btn-secondary" type="button" name="button" style="float:right">Edit</button>
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/logo.png" width="100%" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <h6>Phone</h6>
+                                                    <p>(+2) 010 10406304</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Address</h6>
+                                                    <p>Egypt - Mansoura</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <h6>Email</h6>
+                                                    <p>info@soft-zone.net</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6>Map key</h6>
+                                                    <p>JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf</p>
+                                                    <h6>long: , lat:</h6>
+                                                    <p>31.021458, 31.021458</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Contact info -->
+
+                        <!-- info edit form -->
+                        <section id="info_edit_form">
+                            <div class="row">
+                                <form class="w-100" action="index.html" method="post">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="img/image-placeholder.png" alt="" width="100%">
+                                            <div class="form-group">
+                                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="" value="" placeholder="New Phone Number">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="email" name="" value="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="" value="Address">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="" value="Map key">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="" value="long: & lat:">
+                                            </div>
+                                            <button id="info_save_btn" class="btn btn-success" type="button" name="button">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                        <!-- info edit form -->
+
+
+                        <!-- Contact Messages -->
+                        <section id="contact_messages">
+                            <div class="row">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-header text-right">
+                                            <p><strong>Full name</strong></p>
+                                            <small>example@something.com</small></br>
+                                            <small>245412384</small>
+                                        </div>
+                                        <div class="card-body text-center">
+                                        <h5 class="card-title">Message subject</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        <small class="text-muted">recieved:  date</small>
+                                        <a href="#" style="float: right" class="reply btn btn-primary">Reply</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header text-right">
+                                            <p><strong>Full name</strong></p>
+                                            <small>example@something.com</small></br>
+                                            <small>245412384</small>
+                                        </div>
+                                        <div class="card-body text-center">
+                                        <h5 class="card-title">Message subject</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        <small class="text-muted">recieved:  date</small>
+                                        <a href="#" style="float: right" class="reply btn btn-primary">Reply</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header text-right">
+                                            <p><strong>Full name</strong></p>
+                                            <small>example@something.com</small></br>
+                                            <small>245412384</small>
+                                        </div>
+                                        <div class="card-body text-center">
+                                        <h5 class="card-title">Message subject</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        <small class="text-muted">recieved:  date</small>
+                                        <a href="#" style="float: right" class="reply btn btn-primary">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Contact Messages -->
+
+                        <!-- reply form -->
+                        <section id="reply_form">
+                            <div class="row">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <small class="text-muted">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small> </br>
+                                        <small><strong>_Full name</strong></small>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">reply:</h5>
+                                        <form class="" action="contact.html" method="post">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="" value="">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="name" rows="10" ></textarea>
+                                            </div>
+                                            <button id="send_reply" class="btn btn-success" type="submit" name="button">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- reply form -->
+                    </article>
+                </main>
+            </div>
+            <!-- End of page content wrapper -->
+        </div>
+        <!-- End of wrapper -->
+
+
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- popper.js library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- BootStrap script -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- script file -->
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <!-- Scripts -->
+        <script>
+            $("#sidebar-toggler").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+    </body>
+</html>

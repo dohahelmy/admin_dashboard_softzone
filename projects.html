@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Font Awesome kit -->
+        <script src="https://kit.fontawesome.com/61ff7d8555.js"></script>
+        <!-- bootStrap library -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- styleSheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <!-- Start of wrapper -->
+        <div id="wrapper" class="d-flex">
+            <!-- Vertical Navbar -->
+            <nav id="vertical_nav" class="list-group">
+                <img id="logo" src="img/logo.png">
+                <a class="list-group-item nav-link" href="clients.html"><i class="fas fa-users"></i>Clients</a>
+                <a class="list-group-item nav-link" href="projects.html"><i class="fas fa-project-diagram"></i>Projects</a>
+                <a class="list-group-item nav-link" href="contact.html"><i class="fas fa-info-circle"></i>Contact Us</a>
+            </nav>
+
+            <!-- page content -->
+            <div id="page-content-wrapper">
+                <!-- Horizontal nav -->
+                <nav id="horizontal_nav" class="navbar container-fluid">
+                    <div class="container nav d-flex align-items-center">
+                        <div class="">
+                            <button id="sidebar-toggler" type="button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="justify-content-end d-flex align-items-center">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                            <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+                            <a class="nav-link"><i class="far fa-envelope"></i></a>
+                            <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Dashboard layout -->
+                <main class="container-fluid">
+                    <article class="container">
+                        <!-- projects preview -->
+                        <section id="projects">
+                            <div class="gridboard">
+                                <!-- active projects -->
+                                <div id="grid-item-a" class="project-section">
+                                    <h5>Active projects</h5>
+                                    <table class="table table-borderless">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Start date</th>
+                                                <th scope="col" colspan="2">Project name/Client</th>
+                                                <th scope="col">Deadline</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">15/7/2019</th>
+                                                <td colspan="2"><a href="#">project no#1</a></td>
+                                                <td>24/9/2019</td>
+                                                <td><span class="badge badge-success">In progress</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">23/6/2019</td>
+                                                <td colspan="2"><a href="#">project no#2</a></td>
+                                                <td>15/8/2019</td>
+                                                <td><span class="badge badge-warning">Pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">8/5/2019</td>
+                                                <td colspan="2"><a href="#">project no#3</a></td>
+                                                <td>3/8/2019</td>
+                                                <td><span class="badge badge-success">In progress</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">18/4/2019</td>
+                                                <td colspan="2"><a href="#">project no#4</a></td>
+                                                <td>30/7/2019</td>
+                                                <td><span class="badge badge-success">In progress</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- calendar -->
+                                <div id="grid-item-b" class="project-section">
+                                    <h5>Calender/ Upcoming tasks</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" style="border-top: none;">
+                                            <h6><time>Today, 28/7</time></h6>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <time class="badge badge-danger">10:00 am</time>
+                                                    <time>02:00 pm</time>
+                                                </div>
+                                                <div class="col-8">
+                                                    <strong>Upcoming required task</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h6><time>Today, 28/7</time></h6>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <time class="badge badge-danger">10:00 am</time>
+                                                    <time>02:00 pm</time>
+                                                </div>
+                                                <div class="col-8">
+                                                    <strong>Upcoming required task</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h6><time>Today, 28/7</time></h6>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <time class="badge badge-danger">10:00 am</time>
+                                                    <time>02:00 pm</time>
+                                                </div>
+                                                <div class="col-8">
+                                                    <strong>Upcoming required task</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h6><time>Today, 28/7</time></h6>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <time class="badge badge-danger">10:00 am</time>
+                                                    <time>02:00 pm</time>
+                                                </div>
+                                                <div class="col-8">
+                                                    <strong>Upcoming required task</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- actual time -->
+                                <div id="grid-item-c" class="project-section">
+                                    <h5>Planned VS. Actual time</h5>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <h4 class="time_percentage">120:00</h4>
+                                        <h2 class="time_percentage">90.625%</h2>
+                                        <h4 class="time_percentage">108:45</h4>
+                                    </div>
+                                </div>
+                                <!-- overdue tasks -->
+                                <div id="grid-item-d" class="project-section">
+                                    <h5>Overdue tasks</h5>
+                                    <h1 class="text-center">7</h1>
+                                </div>
+                                <!-- project archive -->
+                                <div id="grid-item-e" class="project-section list-group list-group-flush">
+                                    <h5>Projects archive</h5>
+                                    <div class="w-100 list-group-item">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <small>start date</small>
+                                                </br>
+                                                <small>end date</small>
+                                            </div>
+                                            <div class="col-9">
+                                                <h6 class="archive">Project name</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 list-group-item">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <small>start date</small>
+                                                </br>
+                                                <small>end date</small>
+                                            </div>
+                                            <div class="col-9">
+                                                <h6 class="archive">Project name</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 list-group-item">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <small>start date</small>
+                                                </br>
+                                                <small>end date</small>
+                                            </div>
+                                            <div class="col-9">
+                                                <h6 class="archive">Project name<h6p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- team hours -->
+                                <div id="grid-item-f" class="project-section">
+                                    <h5>Team hours</h5>
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">John Smith</th>
+                                                <td class="text-right">97 hrs</td>
+                                                <td width="300px"><div class="progress">
+                                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Mark Doe</th>
+                                                <td class="text-right">84 hrs</td>
+                                                <td><div class="progress">
+                                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 63%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Sarah Lee</th>
+                                                <td class="text-right">112 hrs</td>
+                                                <td><div class="progress">
+                                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- projects preview -->
+                    </article>
+                </main>
+            </div>
+            <!-- End of page content wrapper -->
+        </div>
+        <!-- End of wrapper -->
+
+
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- popper.js library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- BootStrap script -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- script  file-->
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- Scripts -->
+        <script>
+            $("#sidebar-toggler").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+    </body>
+</html>

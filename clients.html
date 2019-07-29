@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Font Awesome kit -->
+        <script src="https://kit.fontawesome.com/61ff7d8555.js"></script>
+        <!-- bootStrap library -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- styleSheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <!-- Start of wrapper -->
+        <div id="wrapper" class="d-flex">
+            <!-- Vertical Navbar -->
+            <nav id="vertical_nav" class="list-group">
+                <img id="logo" src="img/logo.png">
+                <a class="list-group-item nav-link" href="clients.html"><i class="fas fa-users"></i>Clients</a>
+                <a class="list-group-item nav-link" href="projects.html"><i class="fas fa-project-diagram"></i>Projects</a>
+                <a class="list-group-item nav-link" href="contact.html"><i class="fas fa-info-circle"></i>Contact Us</a>
+            </nav>
+
+            <!-- page content -->
+            <div id="page-content-wrapper">
+                <!-- Horizontal nav -->
+                <nav id="horizontal_nav" class="navbar container-fluid">
+                    <div class="container nav d-flex align-items-center">
+                        <div class="">
+                            <button id="sidebar-toggler" type="button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="justify-content-end d-flex align-items-center">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                            <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+                            <a class="nav-link" href="#"><i class="far fa-envelope"></i></a>
+                            <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Dashboard layout -->
+                <main class="container-fluid">
+                    <article class="container">
+                        <section id="clients">
+                            <div id="clients_table">
+                                <div id="clients_controllers" class="row">
+                                    <div class="w-100">
+                                        <button id="new_client" style="float: right" class="btn btn-success" type="button" name="button"><i class="fas fa-plus"></i> New client</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="w-100 media">
+                                        <img src="img/clients/client_1.png" class="align-self-center mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h6 class="mt-0">
+                                                Client Name
+                                                <button class="btn btn-danger" style="float: right" type="button" name="button"><i class="fas fa-times"></i> Delete</button>
+                                                <button class="btn btn-secondary edit_btn" style="float: right" type="button" name="button"><i class="fas fa-edit"></i> Edit</button>
+                                            </h6>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </p>
+                                            <p>Phone: 25413651</p>
+                                            <p>address: Cras sit amet nibh libero</p>
+                                            <p>email: example@something.com</p>
+                                            <p>Related project: <a href="#">project name</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 media">
+
+                                        <img src="img/clients/client_5.png" class="align-self-center mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h6 class="mt-0">
+                                                Client Name
+                                                <button class="btn btn-danger" style="float: right" type="button" name="button"><i class="fas fa-times"></i> Delete</button>
+                                                <button class="btn btn-secondary edit_btn" style="float: right" type="button" name="button"><i class="fas fa-edit"></i> Edit</button>
+                                            </h6>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </p>
+                                            <p>Phone: 25413651</p>
+                                            <p>address: Cras sit amet nibh libero</p>
+                                            <p>email: example@something.com</p>
+                                            <p>Related project: <a href="#">project name</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 media">
+
+                                        <img src="img/clients/client_14.png" class="align-self-center mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h6 class="mt-0">
+                                                Client Name
+                                                <button class="btn btn-danger" style="float: right" type="button" name="button"><i class="fas fa-times"></i> Delete</button>
+                                                <button class="btn btn-secondary edit_btn" style="float: right" type="button" name="button"><i class="fas fa-edit"></i> Edit</button>
+                                            </h6>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </p>
+                                            <p>Phone: 25413651</p>
+                                            <p>address: Cras sit amet nibh libero</p>
+                                            <p>email: example@something.com</p>
+                                            <p>Related project: <a href="#">project name</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 media">
+
+                                        <img src="img/clients/client_15.png" class="align-self-center mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h6 class="mt-0">
+                                                Client Name
+                                                <button class="btn btn-danger" style="float: right" type="button" name="button"><i class="fas fa-times"></i> Delete</button>
+                                                <button class="btn btn-secondary edit_btn" style="float: right" type="button" name="button"><i class="fas fa-edit"></i> Edit</button>
+                                            </h6>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </p>
+                                            <p>Phone: 25413651</p>
+                                            <p>address: Cras sit amet nibh libero</p>
+                                            <p>email: example@something.com</p>
+                                            <p>Related project: <a href="#">project name</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- client form -->
+                        <section id="client_edit_form">
+                            <form class="w-100" action="index.html" method="post">
+                                <div class="row" style="margin-bottom: 20px; margin-left: 0px;">
+                                    <button type="submit" class="btn btn-light">discard</button>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/image-placeholder.png" alt="" width="100%">
+                                        <div class="form-group" style="margin-top: 20px;">
+                                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="" value="Client name">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="name" rows="3" placeholder="Description"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="" value="Phone number" placeholder="Phone number">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="" value="Address">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="email" name="" value="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="custom-select">
+                                                <option selected>Choose related project</option>
+                                                <option value="1">Project1</option>
+                                                <option value="2">Project2</option>
+                                                <option value="3">Project3</option>
+                                            </select>
+                                        </div>
+                                        <button id="save_client_data" type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save changes</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                        <!-- client form -->
+                    </article>
+                </main>
+            </div>
+            <!-- End of page content wrapper -->
+        </div>
+        <!-- End of wrapper -->
+
+
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- popper.js library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- BootStrap script -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- script -->
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <!-- Scripts -->
+        <script>
+            $("#sidebar-toggler").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+    </body>
+</html>
